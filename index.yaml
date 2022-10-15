@@ -3,6 +3,16 @@ entries:
   adguard:
   - apiVersion: v2
     appVersion: v0.107.7
+    created: "2022-10-15T19:02:02.124360875Z"
+    description: Adguard Home DNS server
+    digest: b86caa4deb1c31d74a8a8c7f26ad969091a98c81b03c1dc99bef217997bf2a6f
+    name: adguard
+    type: application
+    urls:
+    - https://github.com/tsavobits/apps/releases/download/adguard-1.1.12/adguard-1.1.12.tgz
+    version: 1.1.12
+  - apiVersion: v2
+    appVersion: v0.107.7
     created: "2022-10-15T18:55:35.001812279Z"
     description: Adguard Home DNS server
     digest: c6012411b92aff41c06850fd75990fa7755dcabc5524d8e003b0ea4a07164dc7
@@ -21,4 +31,49 @@ entries:
     urls:
     - https://github.com/tsavobits/apps/releases/download/adguard-1.1.10/adguard-1.1.10.tgz
     version: 1.1.10
-generated: "2022-10-15T18:55:35.001823079Z"
+  backup:
+  - apiVersion: v2
+    appVersion: 0.12.0
+    created: "2022-10-15T19:02:02.425698426Z"
+    description: Restic based backup and restore solution for persistent volume claims.
+    digest: e1a8e72217c8ccebd3972e6bbd5af03c28b88b00024a4799236dba38c73e1b2c
+    name: backup
+    type: application
+    urls:
+    - https://github.com/tsavobits/apps/releases/download/backup-1.0.2/backup-1.0.2.tgz
+    version: 1.0.2
+  docker-registry:
+  - apiVersion: v1
+    appVersion: 2.8.1
+    created: "2022-10-15T19:02:02.590252886Z"
+    description: A Helm chart for Docker Registry
+    digest: 0a131ca2c35dec34f61512046d1d30b4e9e9521dca77d0b9f27bdeaee3274788
+    home: https://hub.docker.com/_/registry/
+    icon: https://helm.twun.io/docker-registry.png
+    name: docker-registry
+    urls:
+    - https://github.com/tsavobits/apps/releases/download/docker-registry-2.2.4/docker-registry-2.2.4.tgz
+    version: 2.2.4
+  letsencrypt-issuer:
+  - apiVersion: v2
+    appVersion: v1.4.0
+    created: "2022-10-15T19:02:02.757062999Z"
+    description: ClusterIssuer solving Let's Encrypt DNS challenge
+    digest: a8b618c3c63ceaa592b95b492962d9ec5a90319c167e69254a71517efd6c63ff
+    name: letsencrypt-issuer
+    type: application
+    urls:
+    - https://github.com/tsavobits/apps/releases/download/letsencrypt-issuer-0.1.1/letsencrypt-issuer-0.1.1.tgz
+    version: 0.1.1
+  wireguard:
+  - apiVersion: v2
+    appVersion: "7"
+    created: "2022-10-15T19:02:02.945019522Z"
+    description: A Helm chart for Kubernetes
+    digest: 3b29777f73b9b926a6439c9d9e949902d1e456e4f9877ba073d6c14b14599a7d
+    name: wireguard
+    type: application
+    urls:
+    - https://github.com/tsavobits/apps/releases/download/wireguard-0.1.7/wireguard-0.1.7.tgz
+    version: 0.1.7
+generated: "2022-10-15T19:02:02.945029422Z"
