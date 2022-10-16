@@ -47,7 +47,7 @@ adguard:
     # - '@@||example.com^'
 
 prometheusExporter:
-  enabled: true
+  enabled: false
 
   image:
     repository: ebrianne/adguard-exporter
