@@ -20,8 +20,8 @@ metadata:
   labels:
     {{- include "adguard.labels" . | nindent 4 }}
 spec:
-  type: ClusterIP
-  #externalTrafficPolicy: Local
+  type: NodePort
+  externalTrafficPolicy: Local
   ports:
     - port: 53
       targetPort: dns-tcp
@@ -37,8 +37,8 @@ metadata:
   labels:
     {{- include "adguard.labels" . | nindent 4 }}
 spec:
-  type: ClusterIP
-  #externalTrafficPolicy: Local
+  type: NodePort
+  externalTrafficPolicy: Local
   ports:
     - port: 53
       targetPort: dns-udp
