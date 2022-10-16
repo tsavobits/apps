@@ -77,16 +77,16 @@ podSecurityContext: {}
   # fsGroup: 2000
 
 ingress:
-  enabled: true
+  enabled: false
   annotations: {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: dns.kummer.local
+    - host: dns.example.com
   tls: []
   # - secretName: dns-tls
   #   hosts:
-  #     - dns.kummer.lan
+  #     - dns.example.com
 
 podMonitor:
   enabled: false
